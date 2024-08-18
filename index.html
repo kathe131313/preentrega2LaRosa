@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mutualista Pyxis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/stile.css">
@@ -13,77 +13,64 @@
 <body>
     <header class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-lg-2 h-55 p-0 m-0"><img src="./assets/images/logop1.jpg" class="rounded-8 alt=" logo></div>
-            <div class="col-sm-12  col-lg-8 d-flex justify-content-center p-3">
-                <h1>Mutualista Pyxis</h1>
+            <div class="col-2 p-0 m-0"><img src="./assets/images/logop1.jpg" alt="logo"></div>
+            <div class="col-lg-8 d-flex justify-content-center p-0 m-0">
+                <p class="fs-1">Mutualista Pyxis</p>
             </div>
-            <div class="col-sm-12 col-lg-2 d-grid gap-4 d-md-flex justify-content-md-end p-1">
-                <button type="button" class="btn btn-primary btn-lg">Acceso Socio</button>
+            <div class="col-md-12 col-lg-2 d-grid d-md-flex justify-content-md-end p-0 h-60 w-80">
+                <a href="./pages/accesosocio.html" class="btn btn-primary btn-lg">Acceso Socio</a>
             </div>
         </div>
     </header>
     <main class="container-fluid">
-        <div class="row h-100">
+        <div class="row">
             <section
-                class="col-sm-12 col-md-12 col-lg-3 border border-success p-1 border-opacity-25 d-grid gap-2 mx-auto pad">
+                class="col-sm-12 col-md-12 col-lg-3 border border-success p-4 border-opacity-25 d-grid gap-10 mx-auto">
                 <div
-                    class="col-sm-12 col-md-12 col-lg-3 border border-success p-1 border-opacity-25 d-grid gap-2 mx-auto pad">
-                    <a href="" class="btn btn-primary btn-lg">Nosotros</a>
+                    class="col-sm-12 col-md-12 col-lg-3 border border-success p-4 border-opacity-25 d-grid gap-10 mx-auto">
+                    <a href="./pages/contactos.html" class="btn btn-primary btn-lg">Contacto</a>
                     <a href="./pages/afiliaciones.html" class="btn btn-primary btn-lg">Afiliaciones</a>
-
                 </div>
             </section>
             <section class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
                 <img src="./assets/images/porta.jpg" class="img-fluid" alt="portada">
             </section>
             <section
-                class="col-sm-12 col-md-12 col-lg-3 border border-success p-1 border-opacity-25 d-grid gap-2 mx-auto pad">
-                <div class="col-3 border border-success p-1 border-opacity-25 d-grid gap-2 mx-auto pad">
+                class="col-sm-12 col-md-12 col-lg-3 border border-success p-0 border-opacity-25 d-grid gap-10 mx-auto">
+                <div
+                    class="col-sm-12 col-md-12 col-lg-3 border border-success p-0 border-opacity-25 d-grid gap-10 mx-auto">
                     <a href="./pages/agenda.html" class="btn btn-primary btn-lg">Agenda Consulta</a>
-                    <button type="button" class="btn btn-primary btn-lg">Policlínica</button>
+                    <a href="./pages/policli.html" class="btn btn-primary btn-lg">Policlinica</a>
                 </div>
             </section>
         </div>
-
-
     </main>
     <footer class="container-fluid">
-
         <div class="row">
-            <section class="col-sm-12 col-lg-4">
-                <h2>Acerca de Nosotros</h2>
-                <p class="fs-6">"Somos una mutualista que gestiona su salud de forma fácil y confiable. Ahorre tiempo y
-                    tenga su salud en sus manos"</p>
+            <section class="col-sm-12 col-md-12 col-lg-4">
+                <h4>Acerca de Nosotros</h4>
+                <p>"Somos una mutualista que gestiona su salud de forma fácil y confiable."</p>
             </section>
-            <section class="col-sm-12 col-lg-4">
-                <h2>Enlaces Rápidos</h2>
-                <ul class="nav flex-column col-sm-12 col-lg-4">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/contactos.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/afiliaciones.html">Afiliaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/agenda.html">Agenda Consulta</a>
-                    </li>
+            <section class="col-sm-12 col-md-12 col-lg-4">
+                <h4>Enlaces Rápidos</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="./pages/contactos.html">Contacto</a></li>
+                    <li><a href="./pages/afiliaciones.html">Afiliaciones</a></li>
+                    <li><a href="./pages/agenda.html">Agenda Consulta</a></li>
+                    <li><a href="./index.html">Home</a></li>
                 </ul>
             </section>
-            <section class="col-sm-12 col-lg-4">
-
-                <h2>Contacto</h2>
+            <section class="col-sm-12 col-md-12 col-lg-4">
+                <h4>Contacto</h4>
                 <p>Email: info@bienestar.com</p>
                 <p>Teléfono: +958 92 128 880</p>
-                <img src="./assets/images/link.jpg" alt="Logo linkedin" />
-                <img src="./assets/images/insta.jpg" alt="Logo instag" />
+                <div style="display: flex; gap: 10px;">
+                    <img src="./assets/images/link.jpg" alt="Logo linkedin" style="width: 24px; height: 24px;" />
+                    <img src="./assets/images/insta.jpg" alt="Logo instag" style="width: 24px; height: 24px;" />
             </section>
-            <div class="row h100"></div>
-            <section class="col-12">
-
-                <p class="footer-end">2024 Mutualista Pyxis | Diseñado por Equipo # 5 de Talento Tech +45</p>
-
-            </section>
-        </div>
+            <div class="footer-end">
+                <p>2024 Mutualista Pyxis | Diseñado por Equipo # 5 de Talento Tech +45</p>
+            </div>
         </div>
     </footer>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

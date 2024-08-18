@@ -21,46 +21,42 @@
         </div>
     </header>
     <main>
-        <div class="row  form container w-100 h-100">
-            <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center aling-item-center align-top px-2">
-                <p class="fs-3">Afíliese con Nosotros</p>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-5 d-flex justify-content-md-end">
-                <img src="../assets/images/afiliaciones.jpg" class="img-fluid" alt="afiliaciones">
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-7 ">
-                <form action="" method="POST">
-                    <input class="form-control" type="text" placeholder="Nombre completo" aria-label="Nombre completo" required>
-                    <input class="form-control" type="text" placeholder="Primer apellido" aria-label="Primer apellido" required>
-                    <input class="form-control" type="text" placeholder="Segundo apellido"
-                        aria-label="Segundo apellido" required>
-                    <input class="form-control" type="date" placeholder="fecha de nacimiento"
-                        aria-label="fecha de nacimiento" required>
-                    <input class="form-control" type="text" placeholder="Documento de identidad"
-                        aria-label="Documento de identidad" required>
-                    <input class="form-control" type="text" placeholder="Departamento de residencia"
-                        aria-label="departamento residencia" required>
-                    <input class="form-control" type="text" placeholder="Localidad" aria-label="Localidad" required>
-                    <input class="form-control" type="text" placeholder="Dirección" aria-label="dirección" required>
-                    <input class="form-control" type="email" placeholder="Correo electrónico"
-                        aria-label="correo electronico" required>
-                    <input class="form-control" type="text" placeholder="Número telefónico" aria-label="telefono"required>
-                    <div class="d-grid mx-auto">
-                        <button type="submit" class="btn btn-primary btn-lg">Enviar Solicitud</button>
+        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center aling-item-center align-top px-2">
+            <p class="fs-3">Policlínicas</p>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 w-25 d-flex flex-column">
+                    <div class="mb-3">
+                        <form class="input-group">
+                            <input type="text" class="form-control" placeholder="Ingrese Barrio, Pueblo o Dirección..."
+                                aria-label="Buscar">
+                            <button class="btn btn-primary" type="submit">Buscar</button>
+                        </form>
                     </div>
-                    
-                </form>
+                    <div class="map-container bg-light" style="height: 300px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26178.19905660392!2d-56.15021119516812!3d-34.899550662346016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f813b422c6411%3A0xc5672441e97e8aca!2sBuceo%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1724008288718!5m2!1ses!2suy"
+                            width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 d-flex align-top justify-content-md-end">
+                    <img src="../assets/images/policli2.jpg" class="img-fluid" alt="poli">
+                </div>
             </div>
         </div>
+
     </main>
     <footer class="container-fluid">
-        <div class="row">
-            <section class="col-sm-12 col-md-12 col-lg-4">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <section style="flex: 1; min-width: 250px; padding: 10px;">
                 <h4>Acerca de Nosotros</h4>
                 <p>"Somos una mutualista que gestiona su salud de forma fácil y confiable. Ahorre tiempo y tenga su
                     salud en sus manos"</p>
             </section>
-            <section class="col-sm-12 col-md-12 col-lg-4">
+            <section style="flex: 1; min-width: 250px; padding: 10px;">
                 <h4>Enlaces Rápidos</h4>
                 <ul style="list-style: none; padding: 0;">
                     <li><a href="../pages/contactos.html">Contacto</a></li>
@@ -69,22 +65,22 @@
                     <li><a href="../index.html">Home</a></li>
                 </ul>
             </section>
-            <section class="col-sm-12 col-md-12 col-lg-4">
+            <section style="flex: 1; min-width: 250px; padding: 10px;">
                 <h4>Contacto</h4>
                 <p>Email: info@bienestar.com</p>
                 <p>Teléfono: +958 92 128 880</p>
                 <div style="display: flex; gap: 10px;">
                     <img src="../assets/images/link.jpg" alt="Logo linkedin" style="width: 24px; height: 24px;" />
                     <img src="../assets/images/insta.jpg" alt="Logo instag" style="width: 24px; height: 24px;" />
+                </div>
             </section>
             <div class="footer-end">
                 <p>2024 Mutualista Pyxis | Diseñado por Equipo # 5 de Talento Tech +45</p>
             </div>
         </div>
-   </footer>
+    </footer>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
 </body>
-
 </html>

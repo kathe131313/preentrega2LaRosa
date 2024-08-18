@@ -3,64 +3,111 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" contacto="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/stile.css">
-    <title>Agenda Consulta</title>
-
+    <title>Afiliaciones</title>
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <img src="../assets/images/logochico.jpg" alt="se rompio la imagen" />
-        </div>
-        <div class="titulo">
-            <h1>Agenda Consulta Médica</h1>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2"><img src="../assets/images/logop1.jpg" alt="logo">
+            </div>
+            <div class="col-lg-10 d-flex justify-content-center aling-item-center">
+                <p class="fs-1">Mutualista Pyxis</p>
+            </div>
         </div>
     </header>
-    <main>
-        <section id="seleccion">
-            <div class="button-container">
-                <button class="custom-button">SELECCIONAR ESPECIALIDAD</button>
-                <button class="custom-button">SELECCIONAR LOCAL</button>
-                <button class="custom-button">SELECCIONAR HORA</button>
-            </div>       
+    <main class="container-fluid">
+
+        <section class="sec1">
+            <div class="container text-center">
+                <div class="row">
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center aling-item-center align-top px-2">
+                        <p class="fs-4">Agende su cita Médica</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+
+                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                            <option selected>Seleccione Especialidad</option>
+                            <option value="1">Medicina General</option>
+                            <option value="2">Traumatología</option>
+                            <option value="3">Cardiología</option>
+                            <option value="4">Cardiología</option>
+                            <option value="5">Radiología</option>
+                            <option value="3">Odontología</option>
+                            <option value="3">Psicología</option>
+                        </select>
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                            <option selected>Seleccione Local</option>
+                            <option value="1">Ciudad Vieja</option>
+                            <option value="2">Pocitos</option>
+                            <option value="3">18 Julio</option>
+                            <option value="4">El Prado</option>
+                            <option value="5">Ciudad de la Costa</option>
+                            <option value="3">Las Piedras</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                            <option selected>Seleccione Horario</option>
+                            <option value="1">Mañana</option>
+                            <option value="2">Tarde</option>
+                            <option value="3">Noche</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 h-100">
+                        <button type="button" class="btn btn-primary btn-lg">Agendar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="sect2">
+            <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+                <img src="../assets/images/agenda.jpg" class="img-fluid" alt="agenda">
+            </div>
         </section>
 
-        <section id="ubicacion">
-            <h2>Nuestro Consultorio está ubicado aquí</h2>
-            <div class="mapa-consultorio"></div><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0915157663557!2d-122.40137208501076!3d37.78795977975671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e5a5081d%3A0x4bfbfa85873a24d!2sSalesforce+Tower!5e0!3m2!1sen!2sus!4v1545157153423"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </section>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h2>Acerca de Nosotros</h2>
-                <p>Somos una empresa Mutualista que te permite gestionar tu salud de forma fácil y confiable.</p>
-            </div>
-            <div class="footer-section links">
-                <h2>Enlaces Rápidos</h2>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/afiliaciones.html">Afiliaciones</a></li>
+    <footer class="container-fluid">
+        <div class="row">
+            <section class="col-sm-12 col-md-12 col-lg-4">
+                <h4>Acerca de Nosotros</h4>
+                <p>"Somos una mutualista que gestiona su salud de forma fácil y confiable. Ahorre tiempo y tenga su
+                    salud en sus manos"</p>
+            </section>
+            <section class="col-sm-12 col-md-12 col-lg-4">
+                <h4>Enlaces Rápidos</h4>
+                <ul style="list-style: none; padding: 0;">
                     <li><a href="../pages/contactos.html">Contacto</a></li>
+                    <li><a href="../pages/afiliaciones.html">Afiliaciones</a></li>
+                    <li><a href="../pages/agenda.html">Agenda Consulta</a></li>
+                    <li><a href="../index.html">Home</a></li>
                 </ul>
-            </div>
-            <div class="footer-section contact">
-                <h2>Contacto</h2>
+            </section>
+            <section class="col-sm-12 col-md-12 col-lg-4">
+                <h4>Contacto</h4>
                 <p>Email: info@bienestar.com</p>
                 <p>Teléfono: +958 92 128 880</p>
-                <img src="../assets/images/linkedin.jpg" alt="Logo linkedin" />
-                <img src="../assets/images/instag.jpg" alt="Logo instag" />
+                <div style="display: flex; gap: 10px;">
+                    <img src="../assets/images/link.jpg" alt="Logo linkedin" style="width: 24px; height: 24px;" />
+                    <img src="../assets/images/insta.jpg" alt="Logo instag" style="width: 24px; height: 24px;" />
+            </section>
+            <div class="footer-end">
+                <p>2024 Mutualista Pyxis | Diseñado por Equipo # 5 de Talento Tech +45</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            &copy; 2024 Mutualista Bienestar | Diseñado por Equipo # 5 de Talento Tech +45
-        </div>
     </footer>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
