@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" contacto="width=device-width, initial-scale=1.0">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/stile.css">
     <title>Acceso al Socio</title>
 </head>
 
-<body class="body-grid">
+<body>
     <header class="container-fluid">
         <div class="row">
-            <div class="col-lg-2"><img src="../assets/images/logop1.jpg" alt="logo">
+            <div class="col-lg-2">
+                <img src="../assets/images/logop-1.webp" alt="Logo de Mutualista Pyxis" class="logo-secundario">
             </div>
-            <div class="col-lg-10 d-flex justify-content-center aling-item-center">
-                <p class="fs-1">Mutualista Pyxis</p>
+            <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                <h1 class="fs-1">Mutualista Pyxis</h1>
             </div>
         </div>
     </header>
-    <main class="main-socio">
-        <section id="sec1_grid">
-            <img src="../assets/images/medicosGrandes.jpeg" class="img-fluid" alt="portada">
-        </section>
-        <section id="sec2_grid">
-
-            <p class="fs-3">Acceso al Socio</p>
-            <div class="login-container">
-                <div id="logo-chico">
-                    <img src="../assets/images/logochico.jpg" alt="Logo mas chico" class="logochico">
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Sección de Acceso al Socio -->
+            <section class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center w-95 h-100" aria-labelledby="acceso-socio-title">
+                <h2 id="acceso-socio-title" class="fs-4 text-center mt-3 p-1 m-2">Acceso al Socio</h2>
+                <div class="login-container">
+                    <div id="logo-chico" class="mb-4">
+                        <img src="../assets/images/logochico.jpg" alt="Logo de Mutualista Pyxis">
+                    </div>
+                    <form class="login-form" action="#" method="post" aria-label="Formulario de acceso al socio">
+                        <div class="mb-3">
+                            <label for="cedula" class="form-label">Cédula:</label>
+                            <input type="text" id="cedula" name="cedula" class="form-control" required aria-label="Ingrese su cédula" aria-describedby="cedulasocio">
+                            <small id="cedulaHelp" class="form-text text-muted">Ingrese su número de cédula.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" id="password" name="password" class="form-control" required aria-label="Ingrese su contraseña" aria-describedby="passwordsocio">
+                            <small id="passwordHelp" class="form-text text-muted">Ingrese su contraseña.</small>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" id="submit" class="btn btn-primary w-100" aria-label="Iniciar sesión">Iniciar Sesión</button>
+                        </div>
+                        <div class="form-footer">
+                            <a href="#" aria-label="Enlace para recuperar la contraseña">Olvidé mi contraseña</a>
+                        </div>
+                    </form>
                 </div>
-                <form class="login-form">
-                    <div class="form-group">
-                        <label for="cedula">Cédula:</label>
-                        <input type="text" id="cedula" name="cedula" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" id="submit">Iniciar Sesión</button>
-                    </div>
-                    <div class="form-footer">
-                        <a href="#">Olvidé mi contraseña</a>
-                    </div>
-                </form>
-            </div>
-
-        </section>
+            </section>
+    
+            <!-- Sección de Imagen de Portada -->
+            <section class="col-sm-12 col-md-12 col-lg-6 p-0 w-90 h-90 d-flex justify-content-center mt-5" aria-labelledby="portada-Acceso-socio">
+                <h2 id="portada-title" class="visually-hidden">Imagen de portada</h2>
+                <img src="../assets/images/medicosGrandes.jpeg" class="img-fluid imag-oculta" alt="Imagen de portada con médicos">
+            </section>
+        </div>
     </main>
-
-    </section>
-
-    </main>
-    <footer class="container-fluid">
+    <footer class="container-fluid ">
         <div class="row">
             <section class="col-sm-12 col-md-12 col-lg-4">
                 <h4>Acerca de Nosotros</h4>
-                <p>"Somos una mutualista que gestiona su salud de forma fácil y confiable. Ahorre tiempo y tenga su
-                    salud en sus manos"</p>
+                <p>"Somos una mutualista que gestiona su salud de forma fácil y confiable."</p>
+
             </section>
             <section class="col-sm-12 col-md-12 col-lg-4">
                 <h4>Enlaces Rápidos</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="../pages/contactos.html">Contacto</a></li>
+                <ul class="enlaces-rapidos">
+
                     <li><a href="../pages/afiliaciones.html">Afiliaciones</a></li>
                     <li><a href="../pages/agenda.html">Agenda Consulta</a></li>
                     <li><a href="../index.html">Home</a></li>
@@ -73,14 +75,25 @@
             </section>
             <section class="col-sm-12 col-md-12 col-lg-4">
                 <h4>Contacto</h4>
-                <p>Email: info@bienestar.com</p>
-                <p>Teléfono: +958 92 128 880</p>
-                <div style="display: flex; gap: 10px;">
-                    <img src="../assets/images/link.jpg" alt="Logo linkedin" style="width: 24px; height: 24px;" />
-                    <img src="../assets/images/insta.jpg" alt="Logo instag" style="width: 24px; height: 24px;" />
+                <ul class="enlaces-rapidos">
+
+                    <li><a>Email: info@mutualpyxis.com</a></li>
+                    <li><a href="../pages/contactos.html">Contacto</a><a>Teléfono: +958 92 128 880</a> </li>
+
+                </ul>
+                <div class="social-icons h-80">
+                    <a href="https://www.linkedin.com/in/perfil-pyxis-linkedin" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="../assets/images/link.jpg" alt="Logo LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/perfil-pyxis-instagram" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <img src="../assets/images/insta.jpg" alt="Logo Instagram">
+                    </a>
+                </div>
             </section>
             <div class="footer-end">
-                <p>2024 Mutualista Pyxis | Diseñado por Equipo # 5 de Talento Tech +45</p>
+                <h6>2024 Mutualista Pyxis | Diseñado por Equipo # 5 de Talento Tech +45</h6>
             </div>
         </div>
     </footer>

@@ -5,41 +5,38 @@
 
 body {
     height: 100vh;
-    background-color: #cbd7e9;
+    background-color: rgb(230, 230, 230);
 }
 
 header {
-    height: 13vh;
-    background-color: rgb(237, 245, 250);
+    height: 10vh;
+    background-color: rgb(230, 230, 230);
 }
 
 main {
-    height: 77vh;
-    background-color: rgb(209, 247, 245);
+    height: 74vh;
+    background-color: rgb(229, 246, 245);
+    flex-grow: 1;
+
 }
 
 footer {
-    height: 10vh;
+    height: 16vh;
+    background-color: rgb(230, 230, 230);
 }
 
 .btn-primary {
     background-color: #1f4e4c !important;
-    /* Cambia el color de fondo */
+
     border-color: #1f4e4c !important;
-    /* Cambia el color del borde */
-    height: 45% !important;
+
+    height: 85%;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    border-left: 10px;
+    /* border-left: 20px;*/
     width: 100% !important;
-}
 
-.btn-particular {
-    background-color: #1f4e4c !important;
-    border-color: #1f4e4c !important;
-
-    max-width: 20%;
 }
 
 .btn-primary:hover {
@@ -53,7 +50,11 @@ footer {
     height: 65% !important;
     border-radius: 60% !important;
     padding: 2% 0% !important;
-
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    
 }
 
 .footer-end {
@@ -62,9 +63,35 @@ footer {
     background-color: #222 !important;
     color: #ffffff !important;
     width: 100% !important;
+    height: 50% !important;
 
 
 
+}
+
+.enlaces-rapidos {
+    list-style: none;
+    padding: 0;
+}
+
+.contactos {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.4);
+    /* Efecto de zoom al pasar el ratón por encima */
 }
 
 /********Estilo de la página Contactos, la cual está diseñana en Flex*******************************/
@@ -143,7 +170,7 @@ h1 {
 }
 
 .main-socio {
-    
+
     height: 77vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -152,29 +179,6 @@ h1 {
     padding: 20px;
 }
 
-#sect1_grid img{
-    /*grid-area: sect1;
-    display: grid;*/
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#sect2_grid {
-    /*grid-area: sect1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
 
 #imagen {
     display: grid;
@@ -250,41 +254,142 @@ h1 {
 .form-footera:hover {
     text-decoration: underline;
 }
-.login-form{
+
+.login-form {
     height: 80%;
 }
 
 /*********************************media query para screen chicas**********************************/
-@media (max-width: 768px) {
-    .main-socio {
-        grid-template-columns: 1fr;
-        /* Una sola columna */
-        gap: 20px;
+
+@media (max-width: 576px) {
+    .img-fluid {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-height: 25vh !important;
+        overflow-y: scroll;
     }
 
-    #sec1_grid img {
-        max-width: 100%;
-        margin-bottom: 20px;
-        padding: 25px;
+    .btn-primary {
+        height: 100%;
+        display: grid;
+        gap: 50px !important;
+        padding: 0%;
     }
-    #sec1_grid, #sec2_grid {
-        text-align: center;
-        padding: 10px;
-        width: 100vw;
+
+    .form-select {
+
+        height: 80%;
+
     }
-    .login-form{
-        height: 70%;
+
+    .logo-secundario {
+        height: 80%;
     }
+
+    .fs-1 {
+        padding: 0 !important;
+    }
+
+    .fs-4 {
+        padding-top: 10% !important;
+        padding-bottom: 0% !important;
+        
+    }
+
+    .col-12.col-sm-12.col-lg-3 {
+        padding-top: 0% !important;
+        padding-bottom: 0% !important;
+        height: 80% !important;
+    }
+
+    .imag-oculta {
+        display: none !important;
+    }
+    
     .login-container {
-        
-        height: auto;
-        
-        
+        width: 70%;
+        height: 50% !important;
+        padding-bottom: 1% !important;
+        padding: 0%;
     }
+    #logo-chico {
+        padding: 0% !important;
+        margin: 0% !important;
+    }
+    .mb-3 {
+        margin: 0% !important;
+    }
+    /*****formulario afiliacion********/
+    .form-control {
+        height: 35% !important;
+        overflow-y: scroll !important;
+        padding-top: 0%;
+       
+    }
+    .col-sm-12.col-md-12.col-lg-12 {
+        padding: 0% !important;
+
+    }
+    .form-control.policlinica {
+        height: 65% !important;
+        overflow-y: scroll !important;
+        padding-top: 0%;
+            
+    }
+    
+    
+
 }
+
 /*************************estilo del mapa de la pag Policlínicas**********************************/
 .map-iframe {
     width: 45wv;
     height: 35px;
     border: 0;
+
 }
+/**********************imagen de fondo para la pag Nosostros*************************************/
+.bg-image {
+    background-image: url('../assets/images/logoGigante.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Para que la imagen se quede fija al hacer scroll */
+    color: #2d2c2c !important; /* Asegúrate de que el texto sea legible sobre la imagen */
+    position: relative;
+    height: 100vh;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta el color y la opacidad */
+    z-index: 1;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2; /* Asegúrate de que el contenido esté encima del overlay */
+  }
+  .container {
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 8px; 
+  }
+
+  
+  /************************************animation para la imagen de portada index*******************************************************/
+  .shine-effect {
+    transition: all 0.3s ease-in-out;
+}
+
+.shine-effect:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+  
+ /************************************animation para la imagen de portada index*******************************************************/
