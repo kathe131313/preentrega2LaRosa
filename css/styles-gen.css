@@ -15,7 +15,7 @@ header {
 
 main {
     height: 74vh;
-    background-color: rgb(229, 246, 245);
+    background-color: #d4f5ee;
     flex-grow: 1;
 
 }
@@ -25,10 +25,14 @@ footer {
     background-color: rgb(230, 230, 230);
 }
 
+/****************************************Personalización de los botones de la aplicación**************************************/
+.fs-1 {
+    color: #323131f3 !important;
+}
 .btn-primary {
-    background-color: #1f4e4c !important;
+    background-color: #092943!important;
 
-    border-color: #1f4e4c !important;
+    border-color: #092943 !important;
 
     height: 85%;
     display: flex !important;
@@ -36,16 +40,17 @@ footer {
     align-items: center !important;
     /* border-left: 20px;*/
     width: 100% !important;
+    color: #FFDDC7 !important;
 
 }
 
 .btn-primary:hover {
-    background-color: #4874b7 !important;
-    /* Color de fondo al pasar el ratón */
-    border-color: #4874b7 !important;
-    /* Color del borde al pasar el ratón */
+    background-color: #278671!important;
+    border-color: #278671!important;
+
 }
 
+/****************************************Todas las páginas que tienen imagenes redondas**************************************/
 .img-fluid {
     height: 65% !important;
     border-radius: 60% !important;
@@ -54,9 +59,9 @@ footer {
     padding-bottom: 0px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    
 }
 
+/****************************************Estilos para el footer, igual para todas las páginas**************************************/
 .footer-end {
     text-align: center !important;
     padding: 5px !important;
@@ -64,9 +69,6 @@ footer {
     color: #ffffff !important;
     width: 100% !important;
     height: 50% !important;
-
-
-
 }
 
 .enlaces-rapidos {
@@ -91,18 +93,11 @@ footer {
 
 .social-icons img:hover {
     transform: scale(1.4);
-    /* Efecto de zoom al pasar el ratón por encima */
+    
 }
 
-/********Estilo de la página Contactos, la cual está diseñana en Flex*******************************/
-.main-contacto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
 
+/**********************************************************estilo para el formulario de la página Contactos********************************/
 .contact-form-container {
     background-color: white;
     padding: 20px;
@@ -111,16 +106,6 @@ footer {
     width: 100%;
     max-width: 400px;
 
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h1 {
-    text-align: center !important;
-    margin-bottom: 20px !important;
 }
 
 .contact-form {
@@ -163,36 +148,18 @@ h1 {
     background-color: #0056b3;
 }
 
-/******************************Estilo para la pagina de Acceso al Socio, está diseñada con modelo Grids****************************************/
-.body-grid {
-    height: 100vh;
-    display: grid;
+/*********************************************************Estilos de letra para todas las páginas************************************************************/
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.main-socio {
-
-    height: 77vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
+h1 {
+    text-align: center !important;
+    margin-bottom: 20px !important;
 }
 
-
-#imagen {
-    display: grid;
-    place-items: center;
-    /* Centrar la imagen vertical y horizontalmente */
-    background-color: #e9ecef;
-}
-
-#imagenimg {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
+/******************************************************************Estilo para Login de Acceso al Socio*******************************************/
 .login-container {
     display: grid;
     gap: 15px;
@@ -207,10 +174,6 @@ h1 {
     text-align: center;
 }
 
-.login-containerh2,
-.login-formh3 {
-    text-align: center;
-}
 
 .form-group {
     display: grid;
@@ -259,7 +222,7 @@ h1 {
     height: 80%;
 }
 
-/*********************************media query para screen chicas**********************************/
+/*********************************media query para screen chicas********************************************************************************/
 
 @media (max-width: 576px) {
     .img-fluid {
@@ -288,14 +251,16 @@ h1 {
         height: 80%;
     }
 
+    /*******************************************Título principal de todas las páginas****************************************************************/
     .fs-1 {
         padding: 0 !important;
     }
 
+    /*******************************************sub-titulo de todas las páginas no principal*********************************************************/
     .fs-4 {
         padding-top: 10% !important;
         padding-bottom: 0% !important;
-        
+
     }
 
     .col-12.col-sm-12.col-lg-3 {
@@ -307,39 +272,43 @@ h1 {
     .imag-oculta {
         display: none !important;
     }
-    
+
     .login-container {
         width: 70%;
         height: 50% !important;
         padding-bottom: 1% !important;
         padding: 0%;
     }
+
+    /*****acceso al socio********/
     #logo-chico {
         padding: 0% !important;
         margin: 0% !important;
     }
+
     .mb-3 {
         margin: 0% !important;
     }
+
     /*****formulario afiliacion********/
     .form-control {
         height: 35% !important;
         overflow-y: scroll !important;
         padding-top: 0%;
-       
+
     }
+
     .col-sm-12.col-md-12.col-lg-12 {
         padding: 0% !important;
 
     }
+
     .form-control.policlinica {
         height: 65% !important;
         overflow-y: scroll !important;
         padding-top: 0%;
-            
+
     }
-    
-    
 
 }
 
@@ -350,40 +319,48 @@ h1 {
     border: 0;
 
 }
-/**********************imagen de fondo para la pag Nosostros*************************************/
+
+/********************************************************imagen de fondo para la pag Nosostros***************************************************/
 .bg-image {
     background-image: url('../assets/images/logoGigante.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Para que la imagen se quede fija al hacer scroll */
-    color: #2d2c2c !important; /* Asegúrate de que el texto sea legible sobre la imagen */
+    background-attachment: fixed;
+    /* Para que la imagen se quede fija al hacer scroll */
+    color: #2d2c2c !important;
+    /* Asegúrate de que el texto sea legible sobre la imagen */
     position: relative;
     height: 100vh;
-  }
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Ajusta el color y la opacidad */
+    background: rgba(0, 0, 0, 0.5);
+    /* Ajusta el color y la opacidad */
     z-index: 1;
-  }
-  
-  .container {
-    position: relative;
-    z-index: 2; /* Asegúrate de que el contenido esté encima del overlay */
-  }
-  .container {
-    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
-    padding: 20px;
-    border-radius: 8px; 
-  }
+}
 
-  
-  /************************************animation para la imagen de portada index*******************************************************/
-  .shine-effect {
+.container {
+    position: relative;
+    z-index: 2;
+    /* Asegúrate de que el contenido esté encima del overlay */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+/************************************animation para la imagen de portada index*******************************************************/
+.shine-effect {
     transition: all 0.3s ease-in-out;
 }
 
@@ -391,5 +368,5 @@ h1 {
     filter: brightness(1.2);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
-  
- /************************************animation para la imagen de portada index*******************************************************/
+
+/************************************animation para la imagen de portada index*******************************************************/
